@@ -1,0 +1,518 @@
+﻿<Window x:Class="BBI_15WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BBI_15WPF"
+        mc:Ignorable="d"
+    Title="BBI-15 Laskentaohjelma" Height="600" Width="800"   ResizeMode="NoResize" Background="#f2f2ef">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#dbd7ce" Grid.ColumnSpan="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <TextBlock Text="BBI-15 laskentaohjelma"
+                       Grid.Column="3"
+                       Grid.ColumnSpan="3"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium"/>
+
+            <Button x:Name="btnTaulukko" Content="Näytä/Piilota taulukko"
+                       Grid.Column="7"
+                    Grid.ColumnSpan="3"
+                     
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Click="btnTaulukko_Click"/>
+
+            <Button x:Name="btnInfo" Content="Info"
+                       Grid.Column="10"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Click="btnInfo_Click"/>
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.RowSpan="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37*"/>
+                <ColumnDefinition Width="52*"/>
+                <ColumnDefinition Width="44*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="44*"/>
+                <ColumnDefinition Width="44*"/>
+                <ColumnDefinition Width="44*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="BBI-15"
+                      Grid.Column="0"
+                       
+                      Grid.Row="1"
+                       Grid.ColumnSpan="2"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Height="18" Margin="26,0,23,0" Width="40"/>
+            <TextBlock Text="1"
+                      Grid.Column="0"
+                       
+                      Grid.Row="2"
+                     
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt1" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="2"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock  Text="2"
+                      Grid.Column="0"
+                       
+                      Grid.Row="3"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt2" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="3"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="3"
+                      Grid.Column="0"
+                       
+                      Grid.Row="4"
+                     
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt3" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="4"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="4"
+                      Grid.Column="0"
+                       
+                      Grid.Row="5"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt4" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="5"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="5"
+                      Grid.Column="0"
+                       
+                      Grid.Row="6"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt5" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="6"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="6"
+                      Grid.Column="0"
+                       
+                      Grid.Row="7"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt6" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="7"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="7"
+                      Grid.Column="0"
+                       
+                      Grid.Row="8"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt7" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="8"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="8"
+                      Grid.Column="0"
+                       
+                      Grid.Row="9"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt8" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="9"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="9"
+                      Grid.Column="0"
+                       
+                      Grid.Row="10"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt9" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="10"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock  Text="10"
+                      Grid.Column="0"
+                       
+                      Grid.Row="11"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt10" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="11"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock  Text="11"
+                      Grid.Column="0"
+                       
+                      Grid.Row="12"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt11" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="12"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="12"
+                      Grid.Column="0"
+                       
+                      Grid.Row="13"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt12" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="13"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="13"
+                      Grid.Column="0"
+                       
+                      Grid.Row="14"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt13" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="14"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="14"
+                      Grid.Column="0"
+                       
+                      Grid.Row="15"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt14" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="15"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+            <TextBlock Text="15"
+                      Grid.Column="0"
+                       
+                      Grid.Row="16"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="18" Height="18" Margin="14,0,5,0"/>
+            <TextBox x:Name="txt15" Text=""
+                      Grid.Column="1"
+                       
+                      Grid.Row="16"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18" Margin="10,0,11,0"/>
+
+            <RadioButton Content="Mies"
+                         Grid.Column="2"
+                         Grid.ColumnSpan="2"
+                         Grid.Row="2"
+                         GroupName="sukupuoli" Checked="rdbtnMies_Checked"
+                         />
+            <RadioButton Content="Nainen"
+                         Grid.Column="2"
+                         Grid.Row="4"
+                         Grid.ColumnSpan="2"
+                         GroupName="sukupuoli" Checked="rdbtnNainen_Checked"
+                         />
+            <TextBlock Text="Ikä"
+                      Grid.Column="3"
+                       
+                      Grid.Row="1"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       Width="18" Height="18" />
+            <TextBlock Text="Tulos:"
+                      Grid.Column="2"
+                       
+                      Grid.Row="7"
+                       Grid.ColumnSpan="2"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontSize="14"
+                        />
+            <TextBox x:Name="txtIka" Text=""
+                      Grid.Column="3"
+                       
+                      Grid.Row="2"
+                       
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="14"
+                       FontWeight="Medium" Width="31" Height="18"/>
+            <Label x:Name="lblU" Content=""
+                   Grid.Column="2"
+                   Grid.Row="9"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="5"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   />
+            <Label x:Name="lblK" Content=""
+                   Grid.Column="2"
+                   Grid.Row="11"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="5"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+            <Label x:Name="lblH" Content=""
+                   Grid.Column="2"
+                   Grid.Row="13"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="5"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+            <Label x:Name="lblT" Content=""
+                   Grid.Column="2"
+                   Grid.Row="15"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="5"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+            <Image x:Name="imgTaulukko"
+               Grid.Column="4"
+                   Grid.Row="2"
+                   Grid.RowSpan="16"
+                
+                   Grid.ColumnSpan="5" Source="Capture.PNG" Margin="0,0,0,10" />
+            <TextBox x:Name="txtTeksti" Text=""
+                      Grid.Column="0"
+                       
+                      Grid.Row="20"
+                       Grid.ColumnSpan="15"
+                     Grid.RowSpan="7"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontSize="13"
+                       FontWeight="Medium"
+                     TextWrapping="Wrap"/>
+            <Button x:Name="btnLaske"
+                    Content="Laske"
+                    Grid.Column="0"
+                      Grid.Row="18"
+                       Grid.ColumnSpan="2"
+                    Grid.RowSpan="3"
+                    Foreground="#5c464f"
+                    FontSize="14"
+                    FontWeight="Heavy" Click="btnLaske_Click"
+                   >
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#dbd7ce"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="Foreground" Value="#5c464f"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#df8d7a"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="100" Height="25"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+
+                </Button.Template>
+
+            </Button>
+
+        </Grid>
+
+    </Grid>
+</Window>
