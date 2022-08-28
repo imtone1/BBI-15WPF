@@ -8,10 +8,10 @@ Työterveyshoitajana käytän usein BBI-15 työuupumuskyselyä. Itse kysely on h
 Työterveyshoitajana kaipaisin sovelluksen, jonka avulla pystyisi syöttämään pisteet, näkemään tulokset ja näiden tulkinnat, ja kopioimaan ne potilaskirjauksiin liitettäväksi.
 
 
-Kehitin esimerkkinä kyseisen työpöytäsovelluksen ja web sovelluksen näyttääkseen millaiset sovellukset olisivat mielestäni hyödyllisiä työterveyshoidon käyttöön.
+Kehitin esimerkkinä kyseisen työpöytäsovelluksen ja web sovelluksen näyttääkseen millaiset sovellukset olisivat mielestäni hyödyllisiä työterveyshoidon käyttöön. Tämä on opintojeni alussa luotu työpöytäsovellus.
 
 
-Kyseiset sivusto sekä tietokonesovellus eivät ole käytössä tekijänoikeuksia kunnioittaen. Toimitin nämä sovellukset sekä tarkemman kuvauksen tekijänoikeudet omaavan Edita Publishing Oy tietoon.
+Kyseiset sivusto sekä työpöytäsovellus eivät ole käytössä tekijänoikeuksia kunnioittaen. Toimitin nämä sovellukset sekä tarkemman kuvauksen tekijänoikeudet omaavan Edita Publishing Oy tietoon.
 
 
 ![](/Kuvat/BbiAppEtusivu.PNG)
